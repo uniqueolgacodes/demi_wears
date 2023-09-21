@@ -3,32 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
-    <title>DEMIWEARS</title>
+    <title>Auto Redirect</title>
 </head>
 <body>
-    <section>
-        <h1 class="scan_text">WELCOME TO DEMIWEARS SECURITY SCAN</h1>
-    <div class="link_box">
-        <h1>Please select your device</h1>
-        <div class="select">
-        <br>
-        <div class="pc">
-            <a href="home.html"><i class="fa-solid fa-laptop"></i>
-                <h1>PC</h1></a>
-        </div>
-        <div class="mobile">
-            <a href="construction.html"><i class="fa-solid fa-mobile"></i>
-                <h1>Mobile</h1></a>
-        </div>
-        </div>
-    </div>
-    </section>
-
-    <footer>
-        <strong>Security by OlgaCodes™</strong>
-    </footer>
+    <script>
+        // Check if the user agent contains the word "Mobile"
+        if (/Mobi/i.test(navigator.userAgent)) {
+            // If it's a mobile device, redirect to mobile.html
+            window.location.href = "mobile.html";
+        } else {
+            // If it's not a mobile device, redirect to home.html
+            window.location.href = "home.html";
+        }
+    </script>
 </body>
 </html>
